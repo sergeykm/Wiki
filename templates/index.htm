@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="robots" content="noarchive" />
+  <title>Wiki | Yet another web app</title>
+  <link type="text/css" rel="stylesheet" href="http://yetanotherwebapp.appspot.com/static/main.css" />
+  <link rel="shortcut icon" href="http://yetanotherwebapp.appspot.com/static/favicon.ico" type="image/x-icon" />
+ </head>
+<body>
+
+<br>
+<div class="header-content">
+ <table>
+  <tr>
+   
+   <td nowrap>
+    <form action="/wiki/main" method="post">    
+    <input type="text" name="request" placeholder="search request" maxlength="128" class="input-search">
+    <input class="search-submit" type="submit" value="Search">
+    </form>
+   </td>
+
+  {% if author %}
+
+   <td nowrap>
+    <span class="header-extra" >&#149;</span>
+    <b class="header-extra">{{author.authorname}}</b>
+    <a class="header-links" href="/wiki/signout">Sign Out</a>
+   </td>
+
+  {% else %}
+
+   <td nowrap>
+    <span class="header-extra" >&#149;</span>  
+    <a class="header-links" href="/wiki/signup">Sign Up</a>
+   </td> 
+ 
+   <td nowrap>
+    <span class="header-extra" >&#149;</span>
+    <a class="header-links" href="/wiki/signin">Sign In</a>
+   </td>
+
+  {% endif %}
+
+  </tr>
+ </table>
+
+ <table align="right">
+  <tr >
+   <td>
+    <a class="header-links" href="/wiki/main"><h4>Main Page</h4></a>
+   </td>
+  </tr>
+ </table>
+
+</div>
+
+<br>
+ <div class="content" id="content">
+  <br>
+   {{content}}
+  <br>
+ </div>
+
+</body>
+</html>

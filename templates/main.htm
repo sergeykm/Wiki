@@ -1,0 +1,25 @@
+<h2>Wiki</h2>
+<p class="wiki-content"> Here's the main page of wiki. Wiki is just a website where any page can be edited.</p>
+
+ <br>
+ {% if articles %}
+  <h3>Newest content:</h3>
+
+   {% for item in articles %}
+    <a class="links" href="/wiki/content/{{ item.title }}?version={{ item.version }}"><h3>{{ item.title }} (version {{ item.version }})</h3></a>
+
+    <span class="wiki-date">{{ item.created.strftime("%d.%m.%y %H:%M:%S") }}</span> 
+
+    <p class="wiki-content">{{ item.content }}</a></p>
+
+     <div>
+      <a class="links" href="/wiki/content/{{ item.title }}?version={{ item.version }}">&#183;view</a>
+      <a class="links" href="/wiki/content/_edit/{{ item.title }}">&#183;edit</a>
+     </div>   
+
+   {% endfor %}
+
+ {% else %}
+  <h3>No content yet.</h3>
+    
+ {% endif %}

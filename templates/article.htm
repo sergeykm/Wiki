@@ -1,0 +1,11 @@
+<p class="wiki-header">{{ article.title }}</p>
+<span class="wiki-date">{{ article.created.strftime("%d.%m.%y %H:%M:%S") }}</span>   
+<p class="wiki-content">{{ article.content }}</p>
+            
+<div>
+  <a class="links" href="/wiki/content/_edit/{{ article.title }}">&#183;edit</a>
+  <a class="links" href="/wiki/content/_history/{{article.title}}">&#183;history</a>
+</div>
+
+<br>
+ <a class="links" href="/wiki/main"><h4>&#183;Main Page&#183;</h4></a>

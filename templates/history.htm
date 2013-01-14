@@ -1,0 +1,23 @@
+{% if versions %}
+ <h1>{{ versions[0].title }}</h1>
+
+ {% for item in versions %}
+  <a class="links" href="/wiki/content/{{ item.title }}?version={{ item.version }}"><h3>{{ item.title }} (version {{ item.version }})</h3></a>
+   <span class="wiki-date">{{ item.created.strftime("%d.%m.%y %H:%M:%S") }}</span>
+   <p class="wiki-content">{{ item.content }}</p>
+        
+    <div>
+     <a class="links" href="/wiki/content/{{ item.title }}?version={{ item.version }}">&#183;view</a>
+     <a class="links" href="/wiki/content/_edit/{{ item.title }}">&#183;edit</a>
+    </div>
+ {% endfor %}
+
+ <br>
+  <a class="links" href="/wiki"><h4>&#183;main page&#183;</h4></a>
+
+{% else %}
+ <br>
+  <h3>That page history doesn't exist.</h3>
+   <h3>Head back to <a class="links" href="/wiki">Main Page</a></h3>
+
+{% endif %}

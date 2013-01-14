@@ -1,0 +1,15 @@
+
+<form action="/wiki/signin" method="post">
+<h1>Sign In</h1>
+<h4>Don't have an account? <a class="links" href="/wiki/signup">Create one.</a></h4>
+
+<br>
+ <label> Author 	</label><br>
+ <input class="input-text" type="text" name="authorname" value="{{authorname}}"><br>
+ <label> Password 	</label><br>
+ <input class="input-password" type="password" name="password" value="{{password}}"><br>
+ <p class="error">{{signin_error}}</p>
+
+ <br>
+  <input type="submit" value="Sign In"><br>
+</form>

@@ -1,0 +1,11 @@
+{% if title %}
+ <h2>Search request: {{ "".join(title) }}</h2>
+ The page <b>'{{ "".join(title) }}'</b> does not exist. You can
+ <a class="links" href="/wiki/content/_edit/{{ "".join(title) }}">create this article.</a>
+ 
+{% else %}
+ <br>
+  <h3>No results found.</h3>
+   <h3>Head back to <a class="links" href="/wiki">Main Page</a></h3>
+
+{% endif %}

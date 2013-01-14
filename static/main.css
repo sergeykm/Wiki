@@ -1,0 +1,162 @@
+/*
+Theme URI: yetanotherwebapp.appspot.com
+Description: YetAnotherWebApp 
+Version: 1.0
+*/
+
+/* Main colors and fonts */
+body {
+  background-color: #F5F5F5;
+  color: #474747;
+  position: relative;
+  font-family: Arial, Tahoma;
+  font-size: 14px;
+/*  margin: 0px auto;*/
+  margin: 0px 5%;
+  padding: 0px;
+  width: 80%;
+  min-width:320px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 15px 0px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 5px 0px;
+}
+textarea {
+  background-color: #F8F8FF;
+  width: 100%;
+  height: 400px;
+  font-size: 20px;
+  resize: none;
+  overflow: auto; 
+
+}
+label {
+  font-size: 20px;
+}
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 98%;
+  word-wrap: break-word;
+  
+  margin: 20px 0px;
+  
+}
+.wiki-header {
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px 0px;
+}
+.wiki-content {
+  font-size: 20px;
+  margin: 5px 5px;
+}
+.wiki-date {
+  font-size: 14px;
+  font-style: italic;
+}
+
+/* Links */
+.links {
+  /*color: #262626;*/
+  color: #333333; 	
+  position: relative;
+  font-weight:bold;
+  text-decoration: none;
+  outline: none;
+
+}
+.links:hover {
+  text-decoration: underline;
+}
+
+/* Links (header) */
+.header-links {
+  color: #131313;
+  position: relative;
+  right: 0px;
+  text-decoration: none;
+}
+.header-links:visited {
+  color: #131313;
+}
+.header-links:hover {
+  text-shadow:0px 0px 7px #cccccc;
+}
+
+/* Header */
+.header-extra {
+  color: #707070;
+  position: relative;
+  right: 0px;
+  margin: 5px 0px;
+  text-decoration: none;
+}
+.header-content {
+  position: absolute;
+  right: 3px;
+}
+
+
+/* Error */
+.error {
+  font-style: italic;
+  padding: auto;
+  margin: auto;
+  color: #8B2323;
+}
+
+/* Input */
+.input-search {
+  width: 110px;
+  background-color: #F8F8FF;
+  font-size: 14px;
+  resize: none;
+  overflow: hidden; 
+  position: relative;
+  right:0;
+  white-space: nowrap;
+  margin: 0px;
+  padding: 0px;
+}
+.input-text {
+  background-color: #F8F8FF;
+  width: 300px;
+  font-size: 14px;
+}
+.input-password {
+  background-color: #F8F8FF;
+  width: 300px;
+  font-size: 14px;
+}
+.input-submit {
+  font-size: 14px;
+}
+
+/* Search button */
+.search-submit{
+  width: 65px;
+  height: 25px;
+  font-size: 14px;
+  margin: 5px;
+  padding: 0px;
+}

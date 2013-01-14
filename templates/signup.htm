@@ -1,0 +1,24 @@
+<form method="post">
+
+<h1>Sign Up</h1>
+
+	<label> Author </label><br>
+    <input class="input-text" type="text" name="authorname" placeholder="Enter a desired name" value="{{authorname}}"><br>
+    <p class="error">{{authorname_error}}</p>
+
+	<label> Password </label><br>
+	<input class="input-password" type="password" name="password" placeholder="Enter a password" value="{{password}}"><br>
+	<p class="error">{{password_error}}</p>
+
+	<label> Confirm password </label><br>	
+	<input class="input-password" type="password" name="confirm" placeholder="Enter password again" value="{{confirm}}"><br>
+	<p class="error">{{confirm_error}}</p>
+
+	<label> Email </label><br>
+	<input class="input-text" type="text" name="email" placeholder="Enter you email address (optional)" value="{{email}}"><br>
+	<p class="error">{{email_error}}</p>
+
+    <br>
+	<input type="submit" value="Sign Up"><br>
+
+</form>

@@ -1,0 +1,12 @@
+<form method="post">
+
+  <h1>{{article.title if article.title}}</h1>
+  <h2>New version number {{article.version+1 if article.version}}</h2>
+ 
+ <br>
+  <textarea autofocus maxlength="8192" name="content">{{article.content if article.content}}</textarea>
+ <br>
+
+ <br> 
+  <input type="submit" value="Save">
+</form>
