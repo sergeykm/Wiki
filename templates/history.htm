@@ -3,8 +3,8 @@
 
  {% for item in versions %}
   <a class="links" href="/wiki/content/{{ item.title }}?version={{ item.version }}"><h3>{{ item.title }} (version {{ item.version }})</h3></a>
-   <span class="wiki-date">{{ item.created.strftime("%d.%m.%y %H:%M:%S") }}</span>
-   <p class="wiki-content">{{ item.content }}</p>
+   <span class="wiki-date">{{ item.created.strftime("%d.%m.%y %H:%M:%S") }}</span><br>
+   <span class="wiki-content">{{ item.content }}</span>
         
     <div>
      <a class="links" href="/wiki/content/{{ item.title }}?version={{ item.version }}">&#183;view</a>
